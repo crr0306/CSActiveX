@@ -1,0 +1,49 @@
+﻿Build started 2016/6/28 10:41:14.
+     1>Project "E:\vs2013程序清单\CSActiveX--ISafeObject\CSActiveX\CSActiveX.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(381,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (CSActiveX--ISafeObject.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>Midl:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\midl.exe /D _DEBUG /W1 /nologo /char signed /env win32 /h "CSActiveXidl.h" /tlb "Debug\CSActiveX.tlb" /robust CSActiveX.idl 
+         Processing .\CSActiveX.idl
+         CSActiveX.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.idl
+         oaidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\objidl.idl
+         objidl.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\unknwn.idl
+         unknwn.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\wtypes.idl
+         wtypes.idl
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\basetsd.h
+         basetsd.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\guiddef.h
+         guiddef.h
+         Processing C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\include\oaidl.acf
+         oaidl.acf
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\CSActiveX.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _USRDLL /D _USING_V110_SDK71_ /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\CSActiveX.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt CSActiveX.cpp CSActiveXCtrl.cpp CSActiveXPropPage.cpp
+         CSActiveXPropPage.cpp
+         CSActiveXCtrl.cpp
+         CSActiveX.cpp
+         Generating Code...
+     1>e:\vs2013程序清单\csactivex--isafeobject\csactivex\csactivexctrl.cpp(217): warning C4715: 'CCSActiveXCtrl::WriteInfo' : not all control paths return a value
+       ResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\bin\rc.exe /D _DEBUG /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /l"0x0409" /IDebug\ /nologo /fo"Debug\CSActiveX.res" CSActiveX.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.ocx" /INCREMENTAL /NOLOGO iphlpapi.lib /DEF:".\CSActiveX.def" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.lib" /MACHINE:X86 /DLL Debug\CSActiveX.res
+         Debug\CSActiveX.obj
+         Debug\CSActiveXCtrl.obj
+         Debug\CSActiveXPropPage.obj
+         Debug\stdafx.obj
+            Creating library E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.lib and object E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.exp
+         CSActiveX.vcxproj -> E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.ocx
+       RegisterOutput:
+         regsvr32 /s "E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.ocx"
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(1608,5): warning MSB3075: The command "regsvr32 /s "E:\vs2013程序清单\CSActiveX--ISafeObject\Debug\CSActiveX.ocx"" exited with code 5. Please verify that you have sufficient rights to run this command.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppCommon.targets(1620,5): error MSB8011: Failed to register output. Please try enabling Per-user Redirection or register the component from a command prompt with elevated permissions.
+     1>Done Building Project "E:\vs2013程序清单\CSActiveX--ISafeObject\CSActiveX\CSActiveX.vcxproj" (Rebuild target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:13.19

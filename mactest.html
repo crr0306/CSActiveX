@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+      <title>DemoActiveX</title>
+</head>
+<body>
+<object  id="record" classid="clsid:324D4786-E4C9-4DD0-85C7-15CC1FB88C12">
+	<param name="_ExtentX" value="20000"/>
+	<param name="_ExtentY" value="10000"/>
+	</object>
+	 <br>
+	<input type="button" OnClick="mac()"  value="获得mac地址"></input>
+	<br>
+        <input type="button" OnClick="Writeregedit()"   value="写入注册表"></input>
+ <br>
+	<input type="button" OnClick="testevent()"  value="测试事件"></input>
+
+
+<SCRIPT LANGUAGE="JavaScript">  
+	var res;
+
+
+function mac()  
+{  
+	res = record.getMac()
+	alert(res);
+	
+}
+function Writeregedit(){
+    res=record.WriteInfo("crr","12345678901234567890")
+	if(res==0)
+		{
+    alert("输入失败");
+}
+else{
+	alert("输入成功");
+}
+
+}
+
+function testevent()  
+{  
+	res = record.OnLButtonDown()
+	alert(res);
+	
+}
+ 
+</SCRIPT>
+
+
+</body>
+</html>  

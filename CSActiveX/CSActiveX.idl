@@ -1,0 +1,56 @@
+// CSActiveX.idl : type library source for ActiveX Control project.
+
+// This file will be processed by the MIDL compiler tool to
+// produce the type library (CSActiveX.tlb) that will become a resource in
+// CSActiveX.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(CF8862A3-93B7-4318-B820-36B8F3C7287D), version(1.0),
+  control ]
+library CSActiveXLib
+{
+	importlib(STDOLE_TLB);
+
+	//  Primary dispatch interface for CCSActiveXCtrl
+	[ 
+		uuid(2BCAA157-B490-40EB-ACCD-2C30975A2E26)	
+	]
+
+	//调度
+	dispinterface _DCSActiveX
+	{
+		properties:
+		methods:
+
+			[id(DISPID_ABOUTBOX)] void AboutBox();
+			[id(1)] LONG WriteInfo(BSTR key, BSTR value);
+			[id(2)] BSTR GetMAC();
+	};
+
+	//  Event dispatch interface for CCSActiveXCtrl
+
+	[ 
+		uuid(44268DEF-072A-4246-9215-0506CFC942EB)	
+	]
+	//事件
+	dispinterface _DCSActiveXEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+	};
+
+	//  Class information for CCSActiveXCtrl
+	[
+		uuid(324D4786-E4C9-4DD0-85C7-15CC1FB88C12)
+	]
+	coclass CSActiveX
+	{
+		[default] dispinterface _DCSActiveX;
+		[default, source] dispinterface _DCSActiveXEvents;
+	};
+
+};
